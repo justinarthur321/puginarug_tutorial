@@ -48,6 +48,7 @@ Tip:  Avoid changing many things at once.
 ## Glossary of terms used here.
 
 repo:  is short for repository and it is just a folder or set of folders where we can store files that we want to use when building the website.
+assets/pug.png:  this tells us there is a file called "pug.png" inside the folder called "assets"
 
 ### What files in the repository as used by the website
 
@@ -62,10 +63,10 @@ Open the repo and identify:
 - `index.js`
 - `assets/pug.png`
 
-Then open the page in the browser and explain that the page is built from these files.
+Then open the page in the browser by opening this link: https://justinarthur321.github.io/puginarug_tutoria
 
 ### Success check
-The learner can point to each file and say what it does.
+Can you point to each file and say what it does?
 
 ---
 
