@@ -133,18 +133,33 @@ Can you match each HTML element to the JavaScript line that uses it?
 See that JavaScript controls behaviour, not just text.
 
 ### Activity
-Open `index.js` and change one small number.
+Open `index.js` and change one small number at a time
 
-Safe examples:
+# Change 1 
+Change how many pugs appear
+Commit the file and refresh the browser.
 
-- how many pugs appear
-- how far apart they are
-- how quickly something moves
-
-Save and refresh.
 
 ### Success check
-The learner notices that the program behaves differently because the JavaScript changed.
+Check you can see the change appear in the browser and understand how thist piece of the JavaScript controls how the page appears
+Tip:  Dont panic, you may have to be patient for as long as 10 minutes for the repo to push your commit and make the changes visable
+
+# Change 2
+Change how far apart our puggy wuggies appear
+Commit the file and refresh the browser.
+
+
+### Success check
+Check you can see the change appear in the browser and understand how thist piece of the JavaScript controls how the page appears
+
+
+# Change 3
+Change how much the mouse can "pull" the puggy wuggy woooo
+Commit the file and refresh the browser.
+
+
+### Success check
+Check you can see the change appear in the browser and understand how thist piece of the JavaScript controls how the page appears
 
 ---
 
@@ -166,7 +181,7 @@ Example ideas:
 Save and refresh.
 
 ### Success check
-The learner sees that the text changes automatically during the program.
+Can you understand how the JavaScript changes the text automatically, from one level to another, while the program is running?
 
 ---
 
