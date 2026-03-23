@@ -82,18 +82,16 @@ Open `index.html` and make some small changes to piece of visible text.
 ## Change 1 
 change the page title
 Commit the file and refresh the browser.
+Tip: you can use the refresh button in your browser or use the short cut keys ctl+r
 
 ### Success check
-Check you can see the change appear in the browser and understands that HTML controls the page content.
+Check you can see the change appear in the browser and understands that HTML controls the page content
+Tip:  Dont panic, you may have to be patient for as long as 10 minutes for the repo to push your commit and make the changes visable
 
 ## Change 2
 add one extra sentence above or below the timer
 ### Success check
 Check you can see the change appear in the browser and understands that HTML controls the page content.
-
-
-Save the file and refresh the browser.
-
 
 
 ---
