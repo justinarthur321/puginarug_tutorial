@@ -49,6 +49,7 @@ Tip:  Avoid changing many things at once.
 
 repo:  is short for repository and it is just a folder or set of folders where we can store files that we want to use when building the website.
 assets/pug.png:  this tells us there is a file called "pug.png" inside the folder called "assets"
+commit; is saving saving a file in a repo to become the current live version
 
 ### What files in the repository as used by the website
 
@@ -80,10 +81,16 @@ Open `index.html` and make some small changes to piece of visible text.
 
 ## Change 1 
 change the page title
+Commit the file and refresh the browser.
+
 ### Success check
 Check you can see the change appear in the browser and understands that HTML controls the page content.
-- change the word 
-- add one extra sentence above or below the timer
+
+## Change 2
+add one extra sentence above or below the timer
+### Success check
+Check you can see the change appear in the browser and understands that HTML controls the page content.
+
 
 Save the file and refresh the browser.
 
