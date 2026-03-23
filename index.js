@@ -49,7 +49,7 @@ const image = new Image();
 image.src = "./assets/pug.png";
 
 // How many pugs are layered on the screen.
-const loopingPugs = 40;
+const loopingPugs = 4;
 
 // How far apart the expanding pugs are.
 const offsetDistance = 120;

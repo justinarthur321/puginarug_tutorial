@@ -108,7 +108,8 @@ Find these HTML pieces:
 - the `.seconds` text
 - the `.grade` text
 
-Tip: you can look through the code manually or you can copy the piece you are looking for the paste it into the find tool and let e the machine do the work.  "Just hold on a second dad" I hear you say..."Where is the find tool?"  Use the short cut key ctl+f to open the find tool.
+Tip: you can look through the code manually or you can copy the piece you are looking for the paste it into the find tool and let e the machine do the work.  "Just hold on a second dad" I hear you say..."Where is the find tool?"  
+Tio:  Use the short cut key ctl+f to open the find tool.
 
 
 Now open `index.js` and find the matching JavaScript:
@@ -122,7 +123,7 @@ document.querySelector(".grade")
 JavaScript uses these selectors to find the right part of the page to do what it needs to do.
 
 ### Success check
-Can match each HTML element to the JavaScript line that uses it?
+Can you match each HTML element to the JavaScript line that uses it?
 
 ---
 
