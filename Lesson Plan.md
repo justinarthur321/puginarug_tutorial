@@ -63,7 +63,7 @@ Open the repo and identify:
 - `index.js`
 - `assets/pug.png`
 
-Then open the page in the browser by opening this link: https://justinarthur321.github.io/puginarug_tutoria
+Then open the page in the browser by opening this link: https://justinarthur321.github.io/puginarug_tutorial
 
 ### Success check
 Can you point to each file and say what it does?
