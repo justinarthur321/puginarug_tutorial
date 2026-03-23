@@ -239,13 +239,13 @@ Have fun with this project and your new coding skills
 ## Lesson 8: What Next?
 
 ### Goal
-Understand the functional features of the web page.
+Understand the functional features of the webpage.
 
 ### Challenges
 1 What do you think are the funtional features of this webpage?
-2 What are the things that cause the web page's display to change when it is runing?
+2 What are the things that cause the webpage's display to change when it is runing?
 3 Find the pieces of Javascript which create these changes 
-4 Think about a new web page that you might like to make that would use these same functional features 
+4 Think about a new webpage that you might like to make that would use these same functional features 
 
 ### Success check
 Are you thinking?
