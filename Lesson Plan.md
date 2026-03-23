@@ -235,78 +235,17 @@ Have fun with this project and your new coding skills
 
 ---
 
-## Lesson 8: Mini challenge
+## Lesson 8: What Next?
 
 ### Goal
-Build confidence through a small independent task.
+Understand the functional features of the web page.
 
-### Challenge
-Ask the learner to do three things:
-
-1. change one visible word in HTML
-2. change one number in JavaScript
-3. add one comment
-
-Then refresh the browser and explain the result.
+### Challenges
+1 What do you think are the funtional features of this webpage?
+2 What are the things that cause the web page's display to change when it is runing?
+3 Find the pieces of Javascript which create these changes 
+4 Think about a new web page that you might like to make that would use these same functional features 
 
 ### Success check
-The learner can make a small edit without being led through every click.
-
+Are you thinking?
 ---
-
-## Parent notes
-
-
-### One change at a time
-When something breaks, it is much easier to fix if only one thing changed.
-
-### Celebrate experiments
-If the page looks strange after an edit, that is still useful learning.
-
-### Use plain language
-Prefer:
-- 
-- 
-- 
-
-Avoid too much technical vocabulary too early.
-
----
-
-## Good first edits
-
-These are safe beginner edits:
-
-- change the page title in `index.html`
-- change the starting word `Assistant`
-- change one level name in `index.js`
-- add one HTML comment
-- add one JavaScript comment
-
----
-
-## File safety reminder
-
-If using a plain text editor:
-
-- keep the file names exactly correct
-- do not let `index.html` become `index.html.txt`
-- do not let `index.js` become `index.js.txt`
-
----
-
-## Recommended repo location
-
-A good place for this guide is:
-
-```text
-LESSON_PLAN.md
-```
-
-or
-
-```text
-docs/LESSON_PLAN.md
-```
-
-For a simple tutorial repo, placing it in the top level as `LESSON_PLAN.md` is probably easiest.
