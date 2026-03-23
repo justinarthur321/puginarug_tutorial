@@ -222,20 +222,16 @@ Can explain what a comment is and why it helps?
 ## Lesson 7: Make it personal
 
 ### Goal
-Use creativity to make the project feel like her own.
+Use creativity to make the project feel like your own.
 
-### Activity ideas
-
-Choose one or two:
+### Activity
 
 - replace the pug image with another image
-- change the level names to family names
 - change the background colour
 - add a funny sentence
-- rename the project in the page title
 
 ### Success check
-The learner feels ownership of the project.
+Have fun with this project and your new coding skills
 
 ---
 
