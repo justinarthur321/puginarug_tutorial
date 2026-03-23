@@ -1,10 +1,10 @@
 # Puginarug Tutorial Lesson Plan
 
-This lesson guide is designed for a child using a simple text editor or a browser-based editor.
+This lesson guide is designed for Jasmine Kate Arthur. It requires a simple text editor or a browser-based editor.
 
 ## What this project teaches
 
-This project is a good beginner website because it has only a few moving parts:
+This project aims to teach the fundamental components needed when building a website as follows:
 
 - `index.html` creates the page
 - `index.js` makes the page do things
@@ -24,33 +24,32 @@ A learner can do this project with:
 - a browser-based editor such as `github.dev` or `vscode.dev`
 - a web browser to run the page
 
-No heavy IDE or install is required.
 
 ---
 
-## Suggested teaching style
+## Each of the following lessons can be summarized with the following five steps.
 
-Keep each lesson short and practical.
 
-Use this loop again and again:
-
-1. make one small change
-2. save the file
+1. make one small change to aone of the component files
 3. refresh the browser
 4. look for what changed
 5. explain why it changed
 
-Avoid changing many things at once.
+Tip:  Avoid changing many things at once.
 
 ---
 
-## Lesson 1: Meet the files
+## Lesson 1:  Let's get started and meet the files
 
-### Goal
-Understand that a website is made of separate files with different jobs.
+### Goals
+1 Introduction to some of the terms used in this tutorial.
+2 Understand that a website is made of separate files with different jobs.
 
-### Explain
-Use this simple language:
+## Glossary of terms used here.
+
+repo:  is short for repository and it is just a folder or set of folders where we can store files that we want to use when building the website.
+
+### What files in the repository as used by the website
 
 - HTML says what is on the page
 - JavaScript makes things happen
