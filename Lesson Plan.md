@@ -76,18 +76,18 @@ Can you point to each file and say what it does?
 See that HTML changes what appears on the page.
 
 ### Activity
-Open `index.html` and change a small piece of visible text.
+Open `index.html` and make some small changes to piece of visible text.
 
-Ideas:
-
-- change the page title
+## Change 1 
+change the page title
+### Success check
+Check you can see the change appear in the browser and understands that HTML controls the page content.
 - change the word 
 - add one extra sentence above or below the timer
 
 Save the file and refresh the browser.
 
-### Success check
-The learner sees the change appear in the browser and understands that HTML controls the page content.
+
 
 ---
 
