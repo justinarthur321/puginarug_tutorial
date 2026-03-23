@@ -190,10 +190,14 @@ Can you understand how the JavaScript changes the text automatically, from one l
 ### Goal
 Learn that comments help humans understand code.
 
-### Explain
-Comments are notes for people. The computer ignores them.
+### Explaination
+Comments are notes for people. We use special caracters that tell the computer to ignores comments which would otherwise create an error for the computer.
+Each computer language has its own special caracters that it uses to identify comments.
+In HTML:        /* "your  comments go here and can continue from many lines until you add the caracters again, this time swapped around " */
+In JavaSrcipt:  // "your comments go here and stop when a new line is created
 
 ### Activity
+See how these special caracters are used to creat comments in both the HTML and JavaScript files
 Add a comment above one important part of the HTML and one important part of the JavaScript.
 
 Example in HTML:
@@ -211,7 +215,7 @@ const canvas = document.querySelector("canvas");
 ```
 
 ### Success check
-The learner can explain what a comment is and why it helps.
+Can explain what a comment is and why it helps?
 
 ---
 
