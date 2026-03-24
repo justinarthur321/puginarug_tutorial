@@ -48,7 +48,8 @@ Tip:  Avoid changing many things at once.
 ## Glossary of terms used here.
 
 repo:  is short for repository and it is just a folder or set of folders where we can store files that we want to use when building the website.
-assets/pug.png:  this tells us there is a file called "pug.png" inside the folder called "assets"
+file path: is the direction used in code to tell the computer where a file is located and what it is called eg "assets/pug.png" this tells us there is a file   
+    called "pug.png" inside the folder called "assets"
 commit; is saving a file in a repo to become the current live version
 canvas: A canvas is a blank drawing area in the webpage. JavaScript can paint pictures on it.
 
