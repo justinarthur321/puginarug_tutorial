@@ -49,7 +49,7 @@ Tip:  Avoid changing many things at once.
 
 repo:  is short for repository and it is just a folder or set of folders where we can store files that we want to use when building the website.
 assets/pug.png:  this tells us there is a file called "pug.png" inside the folder called "assets"
-commit; is saving saving a file in a repo to become the current live version
+commit; is saving a file in a repo to become the current live version
 canvas: A canvas is a blank drawing area in the webpage. JavaScript can paint pictures on it.
 
 ### What files in the repository as used by the website
