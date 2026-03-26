@@ -48,16 +48,25 @@ Tip:  Avoid changing many things at once.
 ## Glossary of terms used here.
 
 repo:  is short for repository and it is just a folder or set of folders where we can store files that we want to use when building the website.
-file path: is the direction used in code to tell the computer where a file is located and what it is called eg "assets/pug.png"
-    this tells us there is a file called "pug.png" inside the folder called "assets"
+
+file path: is the direction used in code to tell the computer where a file is located and what it is called eg "assets/pug.png" this tells us there is a file called "pug.png" inside the folder called "assets"
+
 commit: is saving a file in a repo to become the current live version
+
 CSS: Stands for "Cascading Style Sheets". CSS is the language that controls how a webpage looks — colours, sizes, positions, fonts, and animations. HTML builds the structure of the page, and CSS makes it pretty. In this project, all the CSS lives inside the `<style>` tag in `index.html`.
+
 canvas: A canvas is a blank drawing area in the webpage. JavaScript can paint pictures on it.
+
 z-index: A number that controls which things appear in front of or behind other things on the page. A higher z-index means "closer to you" — like stacking pieces of paper, the one on top has the highest number.
+
 animation: A way to make something on the page move or change over time. CSS can create animations without needing JavaScript.
+
 @keyframes: The CSS instruction that describes how an animation should change from start to finish. You give it a name (like "matrix-fall") and tell it what to do at the beginning and end.
+
 opacity: How see-through something is. 0 means invisible, 1 means fully solid. Numbers in between make things partly transparent.
+
 aria-hidden: A label you can put on a piece of HTML to tell screen readers (tools that read web pages aloud for people who cannot see the screen) to skip over it. We use it on decorative things that are not meant to be read.
+
 div: Short for "division". A div is an invisible box in HTML used to group other things together. Think of it like a container or a folder that holds parts of your page.
 
 ### What files in the repository are used by the website
