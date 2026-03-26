@@ -87,9 +87,13 @@
       }
     }
 
-    /* 
-      This banner sits in front of the canvas.
-      We use a high z-index so the moving pugs stay behind it.
+       /*
+      This banner uses two layers:
+      1) a moving green code-rain background
+      2) readable text in front
+
+      The high z-index keeps the banner in front of the canvas,
+      so all the moving pugs stay behind it.
     */
     .challenge-banner {
       position: fixed;
@@ -97,17 +101,74 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 20;
-      width: min(760px, calc(100vw - 24px));
+      width: min(820px, calc(100vw - 24px));
+      min-height: 108px;
       box-sizing: border-box;
-      padding: 12px 16px;
-      text-align: center;
-      background: rgba(255, 248, 220, 0.92);
-      border: 3px solid #222;
+      padding: 0;
+      overflow: hidden;
+      border: 3px solid #0f0;
       border-radius: 14px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+      background: #061106;
+      box-shadow: 0 0 18px rgba(0, 255, 0, 0.25);
       font-family: monospace;
-      font-size: 15px;
+    }
+
+    /*
+      This is the animated background layer.
+      It uses repeating code-like text and moves it downward
+      to mimic digital rain.
+    */
+    .challenge-banner .matrix-rain {
+      position: absolute;
+      inset: -40px 0 0 0;
+      z-index: 1;
+      color: rgba(120, 255, 120, 0.28);
+      font-size: 14px;
+      line-height: 1.1;
+      white-space: pre-wrap;
+      word-break: break-word;
+      padding: 8px 12px;
+      pointer-events: none;
+      text-shadow: 0 0 6px rgba(0, 255, 0, 0.45);
+      animation: matrix-fall 8s linear infinite;
+    }
+
+    /*
+      This is the readable message layer.
+      It sits above the moving code background.
+    */
+    .challenge-banner .banner-copy {
+      position: relative;
+      z-index: 2;
+      padding: 14px 18px;
+      text-align: center;
+      color: #d8ffd8;
+      text-shadow: 0 0 8px rgba(0, 255, 0, 0.65);
+      background: rgba(0, 0, 0, 0.32);
+    }
+
+    .challenge-banner .banner-copy strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 20px;
+      color: #7dff7d;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .challenge-banner .banner-copy span {
+      font-size: 14px;
       line-height: 1.35;
+    }
+
+    /* Move the code-rain layer from top to bottom over and over */
+    @keyframes matrix-fall {
+      from {
+        transform: translateY(-35px);
+      }
+      to {
+        transform: translateY(35px);
+      }
     }
   </style>
 </head>
@@ -122,19 +183,25 @@
     This banner tells people that this is the Pugilla Challenge version.
     Because it sits in front of the canvas, the pugs stay behind it.
   -->
-  <div class="challenge-banner">
-    <strong>Pugilla Challenge Edition</strong><br>
-    This is a challenge version inspired by the original Puginarug project.
-  </div>
+   <!--
+    This banner shows that this is the Pugilla Challenge version.
 
-  <!--
-    This box contains text that JavaScript updates while the page is running.
-    The class names below are important because index.js looks them up.
+    The first inner div creates the moving green code effect.
+    The second inner div holds the readable message in front.
+    Because the banner has a high z-index, the pugs stay behind it.
   -->
-  <div class="timer">
-    <div class="inner">
-      You have been honoring the pug for <span class="seconds">0</span> seconds<br>
-      You are a <span class="grade">Assistant</span> of pug
+  <div class="challenge-banner">
+    <div class="matrix-rain" aria-hidden="true">
+      101101 010011 const pug = true; &lt;canvas&gt; let code = rain; function bark() {}
+      001101 111000 if (pug) { honor++; } else { retry(); } class Challenge extends Fun {}
+      110010 001111 return "Pugilla"; let level = "challenge"; &lt;/script&gt; 010101
+      const loop = requestAnimationFrame; let glow = "green"; canvas.drawImage(pug, x, y);
+      010101 111100 function learn() { save(); refresh(); smile(); } &lt;html&gt; &lt;body&gt;
+    </div>
+
+    <div class="banner-copy">
+      <strong>Pugilla Challenge Edition</strong>
+      <span>This challenge version was rebranded from the original project and now has its own digital code-rain style.</span>
     </div>
   </div>
 
