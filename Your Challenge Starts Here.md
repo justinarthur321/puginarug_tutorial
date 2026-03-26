@@ -1,6 +1,6 @@
-# Puginarug Tutorial Lesson Plan
+# Puginarug Challenge Plan
 
-This lesson guide is designed for Jasmine Kate Arthur. It requires a simple text editor or a browser-based editor.
+This challenge is designed for Jasmine Kate Arthur. It requires a simple text editor or a browser-based editor.
 
 ## What this project teaches
 
@@ -27,10 +27,10 @@ A learner can do this project with:
 
 ---
 
-## Each of the following lessons can be summarized with the following five steps.
+## Each of the following challenges can be summarized with the following five steps.
 
 
-1. make one small change to aone of the component files
+1. make one small change to one of the component files
 3. refresh the browser
 4. look for what changed
 5. explain why it changed
@@ -39,7 +39,7 @@ Tip:  Avoid changing many things at once.
 
 ---
 
-## Lesson 1:  Let's get started and meet the files
+## Challenge 1:  Let's get started
 
 ### Goals
 1 Introduction to some of the terms used in this tutorial.
@@ -48,12 +48,12 @@ Tip:  Avoid changing many things at once.
 ## Glossary of terms used here.
 
 repo:  is short for repository and it is just a folder or set of folders where we can store files that we want to use when building the website.
-file path: is the direction used in code to tell the computer where a file is located and what it is called eg "assets/pug.png" this tells us there is a file   
-    called "pug.png" inside the folder called "assets"
-commit; is saving a file in a repo to become the current live version
+file path: is the direction used in code to tell the computer where a file is located and what it is called eg "assets/pug.png"
+    this tells us there is a file called "pug.png" inside the folder called "assets"
+commit: is saving a file in a repo to become the current live version
 canvas: A canvas is a blank drawing area in the webpage. JavaScript can paint pictures on it.
 
-### What files in the repository as used by the website
+### What files in the repository are used by the website
 
 - HTML says what is on the page
 - JavaScript makes things happen
@@ -66,14 +66,14 @@ Open the repo and identify:
 - `index.js`
 - `assets/pug.png`
 
-Then open the page in the browser by opening this link: https://justinarthur321.github.io/puginarug_tutorial
+Then open the webpage in the browser by opening this link: https://justinarthur321.github.io/puginarug_tutorial
 
 ### Success check
-Can you point to each file and say what it does?
+Can you point to each file in the repo and say what it does?
 
 ---
 
-## Lesson 2: Change something in HTML
+## Challenge 2: Change something in HTML
 
 ### Goal
 See that HTML changes what appears on the page.
@@ -98,7 +98,7 @@ Check you can see the change appear in the browser and understands that HTML con
 
 ---
 
-## Lesson 3: See how JavaScript connects to HTML
+## Challenge 3: See how JavaScript connects to HTML
 
 ### Goal
 Understand that JavaScript can find parts of the page and control them.
@@ -110,8 +110,8 @@ Find these HTML pieces:
 - the `.seconds` text
 - the `.grade` text
 
-Tip: you can look through the code manually or you can copy the piece you are looking for the paste it into the find tool and let e the machine do the work.  "Just hold on a second dad" I hear you say..."Where is the find tool?"  
-Tio:  Use the short cut key ctl+f to open the find tool.
+Tip: you can look through the code manually or you can copy the piece you are looking for the paste it into the find tool and let the the machine do the work.  "Just hold on a second dad" I hear you say..."Where is the find tool?"  
+Tip:  Use the short cut key ctl+f to open the find tool.
 
 
 Now open `index.js` and find the matching JavaScript:
@@ -129,7 +129,7 @@ Can you match each HTML element to the JavaScript line that uses it?
 
 ---
 
-## Lesson 4: Change a number in JavaScript
+## Challenge 4: Change a number in JavaScript
 
 ### Goal
 See that JavaScript controls behaviour, not just text.
@@ -165,7 +165,7 @@ Check you can see the change appear in the browser and understand how thist piec
 
 ---
 
-## Lesson 5: Change the level names
+## Challenge 5: Change the level names
 
 ### Goal
 See that JavaScript can decide what words appear as time passes.
@@ -187,7 +187,7 @@ Can you understand how the JavaScript changes the text automatically, from one l
 
 ---
 
-## Lesson 6: Add comments
+## Challenge 6: Add comments
 
 ### Goal
 Learn that comments help humans understand code.
@@ -221,7 +221,7 @@ Can explain what a comment is and why it helps?
 
 ---
 
-## Lesson 7: Make it personal
+## Challenge 7: Make it personal
 
 ### Goal
 Use creativity to make the project feel like your own.
@@ -237,7 +237,7 @@ Have fun with this project and your new coding skills
 
 ---
 
-## Lesson 8: What Next?
+## Challenge 8: What Next?
 
 ### Goal
 Understand the functional features of the webpage.
