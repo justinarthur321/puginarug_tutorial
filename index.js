@@ -17,7 +17,7 @@ const levels = {
   5: "Sr Assistant",
   10: "Jr Honoror",
   15: "Master Honoror",
-  35: "S Tier Honoror",
+  35: "Sr Tier Honoror",
   65: "Junior Acolyte",
   105: "Acolyte",
   150: "Senior Acolyte",
@@ -49,7 +49,7 @@ const image = new Image();
 image.src = "./assets/pug.png";
 
 // How many pugs are layered on the screen.
-const loopingPugs = 4;
+const loopingPugs = 40;
 
 // How far apart the expanding pugs are.
 const offsetDistance = 120;
