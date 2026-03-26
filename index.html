@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Pug In A Rugy Rug Rug</title>
+  <title>The Pug In A Rug</title>
   <meta name="description" content="Watch the Pug be in the Rug. Level up and maximize!">
 
   <style>
@@ -86,6 +86,29 @@
         display: none;
       }
     }
+
+    /* 
+      This banner sits in front of the canvas.
+      We use a high z-index so the moving pugs stay behind it.
+    */
+    .challenge-banner {
+      position: fixed;
+      top: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 20;
+      width: min(760px, calc(100vw - 24px));
+      box-sizing: border-box;
+      padding: 12px 16px;
+      text-align: center;
+      background: rgba(255, 248, 220, 0.92);
+      border: 3px solid #222;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+      font-family: monospace;
+      font-size: 15px;
+      line-height: 1.35;
+    }
   </style>
 </head>
 <body>
@@ -96,12 +119,20 @@
   <canvas></canvas>
 
   <!--
+    This banner tells people that this is the Pugilla Challenge version.
+    Because it sits in front of the canvas, the pugs stay behind it.
+  -->
+  <div class="challenge-banner">
+    <strong>Pugilla Challenge Edition</strong><br>
+    This is a challenge version inspired by the original Puginarug project.
+  </div>
+
+  <!--
     This box contains text that JavaScript updates while the page is running.
     The class names below are important because index.js looks them up.
   -->
   <div class="timer">
     <div class="inner">
-      The Pug is very pleased with you Jasmine<br>
       You have been honoring the pug for <span class="seconds">0</span> seconds<br>
       You are a <span class="grade">Assistant</span> of pug
     </div>
