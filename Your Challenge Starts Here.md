@@ -51,6 +51,7 @@ repo:  is short for repository and it is just a folder or set of folders where w
 file path: is the direction used in code to tell the computer where a file is located and what it is called eg "assets/pug.png"
     this tells us there is a file called "pug.png" inside the folder called "assets"
 commit: is saving a file in a repo to become the current live version
+CSS: Stands for "Cascading Style Sheets". CSS is the language that controls how a webpage looks — colours, sizes, positions, fonts, and animations. HTML builds the structure of the page, and CSS makes it pretty. In this project, all the CSS lives inside the `<style>` tag in `index.html`.
 canvas: A canvas is a blank drawing area in the webpage. JavaScript can paint pictures on it.
 z-index: A number that controls which things appear in front of or behind other things on the page. A higher z-index means "closer to you" — like stacking pieces of paper, the one on top has the highest number.
 animation: A way to make something on the page move or change over time. CSS can create animations without needing JavaScript.
