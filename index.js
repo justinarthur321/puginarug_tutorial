@@ -58,7 +58,7 @@ const offsetDistance = 120;
 let currentOffset = 0;
 
 // This controls how much the mouse can "pull" the drawing.
-const movementRange = 5000;
+const movementRange = 2000;
 
 // Where the mouse wants the pugs to move.
 const mouseOffset = {
