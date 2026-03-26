@@ -29,8 +29,15 @@
 
     /*
       This banner sits in front of the canvas, so the pugs stay behind it.
-      We keep this version simple and static so it does not interfere with
-      the JavaScript animation running on the canvas.
+      It uses two layers:
+        1) a moving green "digital rain" background (the .matrix-rain div)
+        2) readable text in front (the .banner-copy div)
+
+      "overflow: hidden" stops the rain text from spilling outside the
+      rounded corners of the banner.
+
+      The high z-index (20) keeps the banner in front of the pug canvas,
+      so all the moving pugs stay behind it.
     */
     .challenge-banner {
       position: fixed;
@@ -39,61 +46,92 @@
       transform: translateX(-50%);
       z-index: 20;
       width: min(820px, calc(100vw - 24px));
+      min-height: 108px;
       box-sizing: border-box;
-      padding: 16px 18px;
-      text-align: center;
+      padding: 0;
       overflow: hidden;
       border: 3px solid #00cc66;
       border-radius: 14px;
-      background: linear-gradient(180deg, #081408 0%, #031003 100%);
+      background: #061106;
       box-shadow: 0 0 18px rgba(0, 255, 100, 0.22);
       font-family: monospace;
-      color: #d8ffd8;
     }
 
     /*
-      This faint text pattern gives the banner a Matrix-like code feel
-      without adding another moving animation layer.
+      This is the animated "digital rain" background layer.
+      It shows faint green code-like text that slides downward,
+      like the falling code in The Matrix.
+
+      How it works:
+      - The text starts pushed up above the banner (top: -40px)
+      - The @keyframes animation below moves it downward over and
+        over in a loop
+      - "pointer-events: none" means you can click through the rain
+        to reach buttons or links underneath
+      - "z-index: 1" keeps it behind the readable text layer
     */
-    .challenge-banner::before {
-      content:
-        "101101 010011 const pug = true; canvas.drawImage(pug, x, y); 010101 "
-        "if (pug) { honor++; } function learn() { save(); refresh(); } "
-        "let level = 'challenge'; return 'Pugilla'; 110010 001111";
+    .challenge-banner .matrix-rain {
       position: absolute;
-      inset: 0;
-      padding: 8px 12px;
-      color: rgba(120, 255, 120, 0.14);
-      font-size: 13px;
-      line-height: 1.15;
+      inset: -40px 0 0 0;
+      z-index: 1;
+      color: rgba(120, 255, 120, 0.28);
+      font-size: 14px;
+      line-height: 1.1;
       white-space: pre-wrap;
       word-break: break-word;
+      padding: 8px 12px;
       pointer-events: none;
-      text-shadow: 0 0 6px rgba(0, 255, 0, 0.28);
+      text-shadow: 0 0 6px rgba(0, 255, 0, 0.45);
+      animation: matrix-fall 8s linear infinite;
     }
 
     /*
-      These text elements sit above the decorative code background.
+      This is the readable message layer that sits on top of the rain.
+      "z-index: 2" makes sure you can always read it clearly.
+      The semi-transparent black background helps the text stand out
+      against the moving green code behind it.
     */
-    .challenge-banner strong,
-    .challenge-banner span {
+    .challenge-banner .banner-copy {
       position: relative;
-      z-index: 1;
+      z-index: 2;
+      padding: 14px 18px;
+      text-align: center;
+      color: #d8ffd8;
+      text-shadow: 0 0 8px rgba(0, 255, 0, 0.65);
+      background: rgba(0, 0, 0, 0.32);
     }
 
-    .challenge-banner strong {
+    .challenge-banner .banner-copy strong {
       display: block;
       margin-bottom: 6px;
       font-size: 20px;
       color: #7dff7d;
       letter-spacing: 1px;
       text-transform: uppercase;
-      text-shadow: 0 0 8px rgba(0, 255, 80, 0.5);
     }
 
-    .challenge-banner span {
+    .challenge-banner .banner-copy span {
       font-size: 14px;
       line-height: 1.35;
+    }
+
+    /*
+      @keyframes is how CSS creates animations.
+      This one is called "matrix-fall" and it moves the rain text
+      from 35 pixels above its normal spot to 35 pixels below,
+      then jumps back to the top and repeats forever.
+
+      "linear" means it moves at a constant speed (no speeding up
+      or slowing down).
+      "infinite" means it never stops.
+    */
+    @keyframes matrix-fall {
+      from {
+        transform: translateY(-35px);
+      }
+      to {
+        transform: translateY(35px);
+      }
     }
 
     /* The timer box sits on top of the canvas */
@@ -157,14 +195,17 @@
 
       .challenge-banner {
         top: 10px;
-        padding: 14px 14px;
       }
 
-      .challenge-banner strong {
+      .challenge-banner .banner-copy {
+        padding: 12px 14px;
+      }
+
+      .challenge-banner .banner-copy strong {
         font-size: 17px;
       }
 
-      .challenge-banner span {
+      .challenge-banner .banner-copy span {
         font-size: 13px;
       }
     }
@@ -179,12 +220,32 @@
 
   <!--
     This banner shows that this is the Pugilla Challenge version.
-    It has a Matrix-inspired code look, but it is static so the pug
-    animation on the canvas can keep running normally behind it.
+    It has two layers inside it:
+      1) The "matrix-rain" div — faint green code text that slides
+         downward like digital rain from The Matrix.
+      2) The "banner-copy" div — the readable title and message
+         that sits on top of the rain so you can always read it.
+
+    The banner does NOT use the canvas element, so the pug animation
+    keeps running normally behind it. The rain effect is created
+    entirely with CSS (no JavaScript needed).
+
+    "aria-hidden" on the rain div tells screen readers to ignore the
+    decorative code text, since it is not meant to be read aloud.
   -->
   <div class="challenge-banner">
-    <strong>Pugilla Challenge Edition</strong>
-    <span>This challenge version was rebranded from the original project and has its own code-inspired style.</span>
+    <div class="matrix-rain" aria-hidden="true">
+      101101 010011 const pug = true; &lt;canvas&gt; let code = rain; function bark() {}
+      001101 111000 if (pug) { honor++; } else { retry(); } class Challenge extends Fun {}
+      110010 001111 return "Pugilla"; let level = "challenge"; &lt;/script&gt; 010101
+      const loop = requestAnimationFrame; let glow = "green"; canvas.drawImage(pug, x, y);
+      010101 111100 function learn() { save(); refresh(); smile(); } &lt;html&gt; &lt;body&gt;
+    </div>
+
+    <div class="banner-copy">
+      <strong>Pugilla Challenge Edition</strong>
+      <span>This challenge version was rebranded from the original project and has its own digital code-rain style.</span>
+    </div>
   </div>
 
   <!--
