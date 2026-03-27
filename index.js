@@ -173,6 +173,7 @@ function startLooping() {
   can read easily). We then pick out the pieces we need:
     - the short commit hash (a unique code that identifies the commit)
     - the commit message (the note you wrote when you saved the change)
+    - the username of whoever made the commit
 
   If something goes wrong (for example, no internet), we show a
   friendly message instead of crashing.
@@ -191,12 +192,17 @@ fetch("https://api.github.com/repos/justinarthur321/puginarug_tutorial/commits/m
     // The commit message is the note written when the change was saved.
     var message = data.commit.message.split("\n")[0];
 
+    // The author name is the GitHub username of whoever made the commit.
+    var author = data.commit.author.name;
+
     // Find the HTML elements and fill them in.
     var hashElement = document.querySelector(".commit-hash");
     var messageElement = document.querySelector(".commit-message");
+    var authorElement = document.querySelector(".commit-author");
 
     hashElement.innerText = shortHash;
     messageElement.innerText = message;
+    authorElement.innerText = author;
   })
   .catch(function () {
     // If we cannot reach GitHub, show a helpful message instead.
