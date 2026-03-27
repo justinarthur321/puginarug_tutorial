@@ -1,6 +1,6 @@
 # Puginarug Challenge Plan
 
-This challenge is designed for Jasmine Kate Arthur. It requires a simple text editor or a browser-based editor.
+This challenge is designed for Jasmine Kayt Arthur.
 
 ## What this project teaches
 
@@ -20,9 +20,9 @@ The key learning idea is:
 
 A learner can do this project with:
 
-- a simple text editor, or
-- a browser-based editor such as `github.dev` or `vscode.dev`
-- a web browser to run the page
+
+- a browser-based editor such as:  https://github.dev/justinarthur321/puginarug_tutorial
+- a web browser to run the page such as:  https://justinarthur321.github.io/puginarug_tutorial/
 
 
 ---
