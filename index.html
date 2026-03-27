@@ -155,6 +155,25 @@
       font-weight: bold;
     }
 
+    /*
+      This section shows which version of the code is running.
+      It uses a smaller font and a top border to separate it
+      from the timer text above.
+    */
+    .commit-info {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid #ccc;
+      font-size: 11px;
+      font-weight: normal;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    .commit-info span {
+      font-weight: normal;
+    }
+
     .sitter {
       position: fixed;
       bottom: 16px;
@@ -275,11 +294,21 @@
   <!--
     This box contains text that JavaScript updates while the page is running.
     The class names below are important because index.js looks them up.
+
+    The "commit-info" line at the bottom shows which version of the code
+    is currently live on the website. JavaScript fetches this from the
+    GitHub API when the page loads. This helps you check whether your
+    latest commit has been deployed yet or if the site is still showing
+    an older version.
   -->
   <div class="timer">
     <div class="inner">
       You have been honoring the pug for <span class="seconds">0</span> seconds<br>
       You are a <span class="grade">Assistant</span> of pug
+      <div class="commit-info">
+        Version: <span class="commit-hash">loading...</span><br>
+        <span class="commit-message"></span>
+      </div>
     </div>
   </div>
 

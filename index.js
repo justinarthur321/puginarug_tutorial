@@ -160,3 +160,46 @@ function loopDraw() {
 function startLooping() {
   requestAnimationFrame(loopDraw);
 }
+
+/*
+  Fetch the latest commit information from the GitHub API.
+
+  An API (Application Programming Interface) is a way for one program
+  to ask another program for information. Here we are asking GitHub
+  to tell us about the most recent commit (saved change) in our repo.
+
+  "fetch" sends a request to the GitHub website and waits for a reply.
+  The reply comes back as JSON (a way of organising data that computers
+  can read easily). We then pick out the pieces we need:
+    - the short commit hash (a unique code that identifies the commit)
+    - the commit message (the note you wrote when you saved the change)
+
+  If something goes wrong (for example, no internet), we show a
+  friendly message instead of crashing.
+*/
+fetch("https://api.github.com/repos/justinarthur321/puginarug_tutorial/commits/main")
+  .then(function (response) {
+    // Turn the raw response into JSON data we can read.
+    return response.json();
+  })
+  .then(function (data) {
+    // The commit hash is a long string like "a1b2c3d4e5f6...".
+    // We only show the first 7 characters because that is enough
+    // to identify it (this is called a "short hash").
+    var shortHash = data.sha.substring(0, 7);
+
+    // The commit message is the note written when the change was saved.
+    var message = data.commit.message.split("\n")[0];
+
+    // Find the HTML elements and fill them in.
+    var hashElement = document.querySelector(".commit-hash");
+    var messageElement = document.querySelector(".commit-message");
+
+    hashElement.innerText = shortHash;
+    messageElement.innerText = message;
+  })
+  .catch(function () {
+    // If we cannot reach GitHub, show a helpful message instead.
+    var hashElement = document.querySelector(".commit-hash");
+    hashElement.innerText = "unable to check";
+  });

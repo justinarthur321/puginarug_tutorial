@@ -68,6 +68,10 @@ opacity: How see-through something is. 0 means invisible, 1 means fully solid. N
 aria-hidden: A label you can put on a piece of HTML to tell screen readers (tools that read web pages aloud for people who cannot see the screen) to skip over it. We use it on decorative things that are not meant to be read.
 
 div: Short for "division". A div is an invisible box in HTML used to group other things together. Think of it like a container or a folder that holds parts of your page.
+API: Stands for "Application Programming Interface". An API is a way for one program to ask another program for information. In this project, JavaScript asks the GitHub API "what is the latest commit?" and GitHub sends back the answer.
+JSON: Stands for "JavaScript Object Notation". JSON is a way of organising data so that computers can read it easily. It looks a bit like a list of labels and values, for example: {"name": "Jasmine", "age": 10}.
+commit hash: A unique code (like a fingerprint) that identifies a specific commit. It is a long string of letters and numbers, but we usually only show the first 7 characters because that is enough to tell commits apart. For example: "a1b2c3d".
+fetch: A JavaScript command that sends a request to another website or API and waits for a reply. It is how our page asks GitHub for the latest commit information.
 
 ### What files in the repository are used by the website
 
